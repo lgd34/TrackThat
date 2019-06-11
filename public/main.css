@@ -1,0 +1,327 @@
+p { font-size: 14px; }
+h1 { font-size: 26px; }
+h2 { font-size: 22px; }
+h3 { font-size: 20px; }
+
+/* placeholder formatting */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: lightgray;
+    font-style: italic;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: lightgray;
+    font-style: italic;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: lightgray;
+    font-style: italic;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: lightgray;
+    font-style: italic;
+}
+
+/* overriding vue container class */
+.container {
+    padding: 24px 0;
+}
+
+@media only screen and (max-width: 959px) {
+    .container {
+        padding: 16px 0;
+    }
+}
+
+/**** BUTTONS ****/
+/* overriding vuetify button */
+.v-btn--floating.v-btn--small.add-thing {
+    padding: 0;
+    margin-bottom: 18px;
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+/* Button Styles */
+.v-btn.small-button{
+    /* padding:1px; */
+    /* font-size: 12px; */
+    border: 1px solid;
+    /* border-color: rgba(212, 212, 212, 0.925); */
+    color: #DF5C46;
+    background-color: white;
+    box-shadow: 0px 0px 0px;
+}
+
+.edit {
+    color: #DF5C46;
+    margin: 5px;
+    padding: 5px;
+    min-width: auto;
+}
+
+.colored-button, .colored-button a, .colored-button .v-btn__content {
+    text-decoration: none;
+    /* background-color: #DF5C46; */
+    color: white;
+}
+
+.no-under {
+    text-decoration: none;
+}
+
+.add-button {
+    padding: 0 10px;
+    color: #DF5C46;
+    filter: drop-shadow(1px 1px 3px gray);
+}
+
+#backButton{
+    align-content: left;
+ }
+ 
+ #editButton{
+    align-content: right;
+ }
+
+ .submit-button {
+    height: 50px;
+    margin: 20px 0;
+}
+
+/**********************/
+
+ .page-title {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+    font-size: 5vw;
+}
+
+ .back-button {
+     display: inline-block;
+ }
+
+ .centered {
+     text-align: center;
+ }
+
+/* ###### HOMESCREEN.VUE ###### */
+
+#home-screen .page-title {
+    display: block;
+}
+
+/* content section */
+.inner {
+    margin-top: 30px;
+    padding: 8%;
+    text-align: left;
+}
+
+.greeting {
+    color: #DF5C46;
+}
+
+.message {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.goals {
+    background-color: #DF5C46;
+    color: white;
+}
+
+/* 
+tracker and collection sections
+ */
+.overflow {
+    overflow: scroll;
+}
+
+.solid {
+    background-color: #DF5C46;
+    background-image: url('./img/triangles.png');
+    background-repeat: repeat;
+    background-size: cover;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-top: 10px;
+    max-height: 225px;
+    overflow-y: scroll;
+}
+
+.solid h3 {
+    margin: 10px 0;
+
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.right {
+    float: right;
+}
+
+
+/* 
+stuff for boxes on home page 
+*/
+.box-container {
+    text-align: left;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.box {
+    height: 130px;
+    width: 130px;
+    display: inline-table;
+    vertical-align: middle;
+    margin: 20px 5%;
+    margin-left: 0;
+    /* background-color: gray; */
+    border-radius: 3px;
+    filter: drop-shadow(1px 1px 2px gray);
+}
+
+.box a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.box-text {
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+}
+
+/** CREATE TRACKER **/
+#add-tracker-screen .section {
+    text-align: center;
+}
+
+.required {
+    color: #DF5C46;
+    font-size: 16px;
+}
+
+input, textarea, select {
+    border-bottom: solid rgb(223, 92, 70) 2px;
+    padding-left: 5px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.prompt {
+    padding: 10px 0;
+}
+
+.section {
+    /* border-bottom: solid lightgray .5px; */
+    /* background-color: white; */
+    margin-top: 6%;
+    /* padding: 4%; */
+}
+
+.section-first {
+    margin-top: 0;
+}
+
+.section-body {
+    background-color: white;
+    padding: 4%;
+}
+
+.section p {
+    margin: 10px 0;
+}
+
+.section .optional {
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.section textarea {
+    width: 90%;
+}
+
+.section select {
+    width: 50%;
+}
+
+/* popup */
+.popup {
+    text-align: center;
+}
+
+
+/* Nav styles */
+
+.page-title {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+    text-transform: capitalize;
+    font-size: 4vw;
+}
+
+v-toolbar, #titlebar{
+    /* position: fixed; */
+    background-color: white;
+    opacity: .95;
+    /* padding-right: 0; */
+}
+
+/* override padding on nav */
+
+div, .v-toolbar_content, #titlebar{
+    padding:0;
+    max-width: 100%;
+}
+
+/** VIEW TRACKER **/
+.tracker-log-entry {
+    border-bottom: solid .5px lightgray;
+    margin-bottom: 10px;
+}
+
+.tracker-log-date {
+    width: 20%;
+    margin-right: 30px;
+}
+
+/** CHART **/
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    /* padding-bottom: 100%; aspect ratio */
+    vertical-align: top;
+    /* overflow: hidden; */
+}
+.svg-content-responsive {
+    display: inline-block;
+    /* position: absolute; */
+    top: 10px;
+    left: 0;
+}
+
+.ast{
+    font-size: 18px;
+} 
+
+.subhead{
+    font-size: 16px;
+}
