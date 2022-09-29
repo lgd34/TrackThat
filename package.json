@@ -10,7 +10,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "d3": "^5.7.0",
+    "d3": "^7.6.1",
     "express": "^4.16.4",
     "is-alphanumeric": "^1.0.0",
     "moment": "^2.22.2",
